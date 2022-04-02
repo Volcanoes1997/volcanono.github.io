@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 50px;
+    padding:10px;
+    margin: 20px;
+    word-break: normal;
+  }
+  h2{
+    margin: 20px;
+    line-height:50px;
+  }
+  h3{
+    margin: 20px;
+    line-height: 20px;
+  }
+  
+  .header {
+    padding: 15px;
+    text-align: center;
+    background-image:url(images/header.jpeg);
+    background-size:cover;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    line-height: 120%;
+    color:beige;
+  }
+
+  .nav{
+    background: #B56357;
+    height:65px;
+    margin:0 auto;
+    font-size:20px;
+  }
+  .nav ul li{
+        list-style-type: none;
+        float:left;
+    }
+  .nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding:10px 30px 5px 30px;
+    line-height: 50px;
+    text-align:center;
+    color:white;
+  }
+  .nav ul li a:hover:not(.active) {
+    background-color: #EAE3EA;
+    color: black;
+  }
+  .active{
+      background-color: #A7B3A5;
+      color:beige;
+  }
+  
+  .nav ul li ul li {
+    float:none;
+  }
+  .nav ul li ul li a {
+    color: black;
+  }
+
+  .nav ul li ul {
+    display:none;
+  }
+  .nav ul li:hover ul {
+      display:block;
+  }
+
+  .column {   
+    float: left;
+    width: 100%;
+  }
+  
+  
+  /* 为文章添加卡片效果 */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* 清除列之后的浮动 */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding:0;
+    text-align: center;
+    background: #A7B3A5;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  
+  
+  /* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+  @media screen and (max-width: 400px) {
+    .nav ul li{
+      float: none;
+      width: 100%;
+    }
+  }
